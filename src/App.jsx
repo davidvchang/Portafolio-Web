@@ -3,9 +3,11 @@ import Navegacion from './components/Navegacion'
 
 function App() {
   return (
-    <nav>
-      <Navegacion/>
-    </nav>
+    <main className='bg-Color-Fondo h-screen'>
+      <div className='container'>
+        <Navegacion/>
+      </div>
+    </main>
   )
 }
 
