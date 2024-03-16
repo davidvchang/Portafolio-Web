@@ -1,11 +1,17 @@
 import './App.css'
+import Forms from './components/Forms'
 import Navegacion from './components/Navegacion'
+import Principal from './components/Principal'
 
 function App() {
   return (
     <main className='bg-Color-Fondo h-screen'>
       <div className='container'>
         <Navegacion/>
+        <div className='flex flex-col md:justify-center items-center justify-center md:w-screen'>
+          <Principal/>
+          <Forms/>
+        </div>
       </div>
     </main>
   )

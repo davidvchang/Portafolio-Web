@@ -11,6 +11,7 @@ export default {
         transparent: 'transparent',
         current: 'currentColor',
         'Color-Fondo': '#d8e6ed',
+        'Color-Fondo2' : '#e1eff6',
         'purple': '#3f3cbb',
         'midnight': '#121063',
         'metal': '#565584',
