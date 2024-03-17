@@ -5,7 +5,7 @@ import Principal from './components/Principal'
 
 function App() {
   return (
-    <main className='bg-Color-Fondo h-screen'>
+    <main className='bg-Color-Fondo h-full'>
       <div className='container'>
         <Navegacion/>
         <div className='flex flex-col md:justify-center items-center justify-center md:w-screen'>
