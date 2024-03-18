@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import DV from '../assets/DV.webp'
+import SobreMi from './SobreMi';
 
 function Navegacion() {
   
@@ -30,7 +31,7 @@ function Navegacion() {
                 </svg>
               </button>
               <li className='flex flex-col w-full pb-5 gap-5 md:flex md:flex-row md:gap-5 md:p-1 lg:gap-20 items-center'>
-                <a href="" className='w-28 p-5 hover:opacity-50 md:p-2 md:pb-1 md:hover:-mb-1 md:hover:border-b-2 md:hover:border-black hover:transition-opacity text-xs md:text-sm lg:text-base'>Sobre mi</a>
+                <a href="./SobreMi.jsx" className='w-28 p-5 hover:opacity-50 md:p-2 md:pb-1 md:hover:-mb-1 md:hover:border-b-2 md:hover:border-black hover:transition-opacity text-xs md:text-sm lg:text-base'>Sobre mi</a>
                 <a href="" className='w-28 p-5 hover:opacity-50 md:p-2 md:pb-1 md:hover:-mb-1 md:hover:border-b-2 md:hover:border-black hover:transition-opacity text-xs md:text-sm lg:text-base'>Habilidades</a>
                 <a href="" className='w-28 p-5 hover:opacity-50 md:min-w-24 md:p-2 md:pb-1 md:hover:-mb-1 md:hover:border-b-2 md:hover:border-black hover:transition-opacity text-xs md:text-sm lg:text-base'>Proyectos</a>
                 <a href="" className='w-28 p-5 hover:opacity-50 md:min-w-28 md:p-2 md:pb-1 md:hover:-mb-1 md:hover:border-b-2 md:hover:border-black hover:transition-opacity text-xs md:text-sm lg:text-base'>Contactame</a>

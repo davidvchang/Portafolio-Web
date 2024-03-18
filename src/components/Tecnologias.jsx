@@ -1,5 +1,4 @@
 import React from 'react'
-import JavaScript from '../assets/JavaScript.webp'
 import Logos from '../Logos'
 
 function Tecnologias() {
@@ -7,7 +6,7 @@ function Tecnologias() {
   return (
     <section className='w-full rounded-2xl shadow md:bg-Color-Fondo lg:bg-Color-Fondo2 flex flex-col bg-Color-Fondo text-justify items-center h-auto pb-5 lg:w-full lg:h-3/4'>
       <h1 className='p-5 font-medium text-2xl text-red-600'>Tecnologias</h1> 
-      <div className='grid grid-cols-1 gap-5 w-full md:w-11/12 md:grid-cols-2 lg:w-11/12 lg:grid-cols-4 justify-items-center'>
+      <div className='grid gap-5 w-full md:w-11/12 md:grid-cols-2 lg:w-11/12 lg:grid-cols-4 lg:gap-5 justify-items-center'>
         <div className='grid grid-cols-2 gap-5 p-5 shadow w-1/5 bg-slate-100 min-w-56 justify-items-center'>
           <img src={Logos.Csharp} alt="C# Logo" className='w-10'/>
           <img src={Logos.CPlusPlus} alt="C++ Logo" className='w-10'/>
