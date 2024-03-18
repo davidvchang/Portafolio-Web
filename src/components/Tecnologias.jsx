@@ -10,7 +10,7 @@ function Tecnologias() {
       <div className='grid grid-cols-1 gap-5 w-full md:w-11/12 md:grid-cols-2 lg:w-11/12 lg:grid-cols-4 justify-items-center'>
         <div className='grid grid-cols-2 gap-5 p-5 shadow w-1/5 bg-slate-100 min-w-56 justify-items-center'>
           <img src={Logos.Csharp} alt="C# Logo" className='w-10'/>
-          <img src={Logos.CPlusPlus} alt="C++ Logo" className='w-10 '/>
+          <img src={Logos.CPlusPlus} alt="C++ Logo" className='w-10'/>
           <img src={Logos.JS} alt="JavaScript Logo" className='w-10 scale-110'/>
           <img src={Logos.Python} alt="Python Logo" className='w-10 scale-90'/>
         </div>
