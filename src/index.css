@@ -4,6 +4,22 @@
     max-width: 100vw
 }
 
+.transicion-menu {
+    transition-property: opacity, transform;
+    transition-duration: 0.5s; /* Ajusta esta duración según tus preferencias */
+    transition-timing-function: ease;
+  }
+  
+  .menu-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .menu-oculto {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

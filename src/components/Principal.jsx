@@ -12,13 +12,13 @@ function Principal() {
             <img
             src={Foto}
             alt="Foto-Principal"
-            className=" rounded-full p-3 w-48 h-48 md:w-52 md:h-52 lg:w-56 lg:h-56"
+            className=" rounded-full p-3 w-48 h-48 md:w-48 md:h-48 lg:w-52 lg:h-52"
             />
             <div className="flex flex-row justify-center gap-2">
             <a href="https://www.linkedin.com/in/davidvchang/" target="_blank" className="w-6 h-6">
                 <FaLinkedin className="w-6 h-6 text-blue-700 hover:scale-110 transition-all duration-75"/>
             </a>
-            <a href="https://github.com/davidvchang?tab=repositories" target="_blank" className="w-6 h-6">
+            <a href="https://github.com/davidvchang" target="_blank" className="w-6 h-6">
                 <FaGithubSquare className="w-6 h-6 hover:scale-110 transition-all duration-75"/>
             </a>
             </div>
