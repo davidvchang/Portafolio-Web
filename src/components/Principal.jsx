@@ -6,7 +6,7 @@ import { FaGithubSquare } from "react-icons/fa";
 function Principal() {
 
   return (
-    <section className="flex flex-col justify-center items-center gap-5 md:flex-row md:justify-around md:items-center md:h-auto w-screen lg:w-3/4 lg:shadow lg:bg-Color-Fondo2 lg:mt-5">
+    <section className="flex flex-col w-screen justify-center items-center gap-5 md:flex-row md:justify-around md:items-center md:h-auto md:w-screen lg:w-3/4 lg:shadow lg:bg-Color-Fondo2 lg:mt-5">
       
         <div className="w-64 h-auto min-w-64 pb-5 pt-3 flex flex-col items-center">
             <img

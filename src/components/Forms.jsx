@@ -1,14 +1,17 @@
 import React from 'react'
 import SobreMi from './SobreMi'
 import Tecnologias from './Tecnologias'
+import Proyectos from './Proyectos'
 
 function Forms() {
   return (
-    <div className="flex w-screen gap-5 lg:gap-0 md:bg-Color-Fondo pl-0 py-5 lg:w-3/4 flex-col lg:flex-row">
-      <SobreMi/>
-      <Tecnologias/>
-      
-    </div>
+    <>
+      <div className="flex flex-col w-screen gap-5 pl-0 py-5 md:bg-Color-Fondo lg:w-3/4 lg:flex-row lg:gap-0">
+        <SobreMi/>
+        <Tecnologias/>
+      </div>
+      <Proyectos/>
+    </>
   )
 }
 

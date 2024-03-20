@@ -14,6 +14,7 @@ import GitHub from './assets/GitHub.svg'
 import PostgreSQL from './assets/PostgreSQL.svg'
 import VS from './assets/Visual_Studio.svg'
 import VSCode from './assets/Visual_Studio_Code.svg'
+import React from './assets/react.svg'
 
 
 export default {
@@ -33,4 +34,5 @@ export default {
     "PostgreSQL": PostgreSQL,
     "VS": VS,
     "VSCode": VSCode,
+    "React": React,
 }

@@ -1,0 +1,45 @@
+import React from 'react'
+import Logos from '../Logos'
+import Captura_Portafolio from '../assets/Portafolio.png'
+
+function Proyectos() {
+
+    const MostrarHoverProyecto = () => {
+        const lista = document.getElementById('proyecto-hover');
+        lista.classList.toggle('hidden');
+      };
+
+  return (
+    <section className="pb-5 rounded-2xl w-full justify-center gap-5 md:h-auto md:w-screen lg:w-3/4 lg:shadow lg:bg-Color-Fondo2">
+      <h1 className='p-5 font-medium text-2xl text-red-600'>Proyectos</h1>
+      <div className='flex flex-wrap gap-5 w-full md:w-11/12 lg:w-full lg:gap-5 justify-center'>
+        <div className='flex flex-col w-1/3 bg-slate-100 gap-5 shadow-2xl items-center overflow-hidden h-72' onMouseEnter={MostrarHoverProyecto} onMouseLeave={MostrarHoverProyecto}>
+            <img src={Captura_Portafolio} alt="" className='h-72 shadow-2xl'/>
+            <div className='flex flex-col justify-center items-center absolute bg-slate-700 w-3/12 h-72 opacity-90 hidden shadow-2xl transition duration-1000 ease-in-out transform' id='proyecto-hover'>
+                    <a href="https://david-valenzuela.netlify.app/" target='_blank' className='w-6 h-6 absolute top-3 right-5 hover:opacity-55 hover:scale-105 hover:transition-all'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-slate-100">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                        </svg>
+                    </a>
+                <h3 className='text-slate-100 text-4xl'>Portafolio web</h3>
+                <span className='text-slate-400 text-xl pb-3'>Portafolio web creado en React y Tailwind</span>
+                <div className='flex gap-5'>
+                    <img src={Logos.React} alt="React Logo" className='w-7 hover:scale-105 hover:transition-all'/>
+                    <img src={Logos.Tailwind} alt="Tailwind Logo" className='w-8 hover:scale-105 hover:transition-all'/>
+                </div>
+
+            </div>
+            {/* <div className='flex flex-row w-full justify-center gap-1'>
+                <img src={Logos.Tailwind} alt="" className='w-6'/>
+                <img src={Logos.Tailwind} alt="" className='w-6'/>
+                <img src={Logos.Tailwind} alt="" className='w-6'/>
+            </div>
+            <h1>Portafolio Web</h1>
+            <span>Portafolio web creado en React con Tailwind</span> */}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Proyectos
