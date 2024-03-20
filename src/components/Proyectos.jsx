@@ -10,9 +10,9 @@ function Proyectos() {
       };
 
   return (
-    <section className="pb-5 rounded-2xl w-full justify-center gap-5 md:h-auto md:w-screen lg:w-3/4 lg:shadow lg:bg-Color-Fondo2">
+    <section className="pb-5 lg:rounded-2xl w-full justify-center bg-Color-Fondo2 gap-5 md:h-auto md:w-screen lg:w-3/4 shadow-2xl lg:shadow lg:bg-Color-Fondo2">
       <h1 className='p-5 font-medium text-2xl text-red-600'>Proyectos</h1>
-      <div className='flex flex-wrap gap-5 w-full md:w-11/12 lg:w-full lg:gap-5 justify-center'>
+      <div className='flex flex-wrap gap-5 w-full md:w-full lg:w-full lg:gap-5 justify-center'>
         <div className='flex flex-col w-auto bg-slate-100 gap-5 shadow-2xl items-center overflow-hidden h-auto' onMouseEnter={MostrarHoverProyecto} onMouseLeave={MostrarHoverProyecto}>
             <img src={Captura_Portafolio} alt="" className='h-64 w-96 min-w-96 shadow-2xl'/>
             <div className='flex flex-col justify-center items-center absolute bg-slate-700 h-64 w-96 min-w-96 opacity-90 hidden shadow-2xl transition duration-1000 ease-in-out transform' id='proyecto-hover'>

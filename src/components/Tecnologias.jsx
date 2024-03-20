@@ -4,7 +4,7 @@ import Logos from '../Logos'
 function Tecnologias() {
 
   return (
-    <section className='w-full rounded-2xl shadow md:w-full md:bg-Color-Fondo lg:bg-Color-Fondo2 flex flex-col bg-Color-Fondo text-justify items-center h-auto pb-5 lg:w-full lg:h-3/4'>
+    <section className='w-full rounded-2xl lg:shadow md:w-full md:bg-Color-Fondo lg:bg-Color-Fondo2 flex flex-col bg-Color-Fondo text-justify items-center h-auto pb-5 lg:w-full lg:h-3/4'>
       <h1 className='p-5 font-medium text-2xl text-red-600'>Tecnologias</h1> 
       <div className='flex flex-wrap gap-5 w-screen md:w-11/12 lg:w-11/12 lg:gap-5 justify-center '>
         <div className='grid grid-cols-2 gap-5 p-5 shadow w-1/5 bg-slate-100 min-w-56 justify-items-center'>
