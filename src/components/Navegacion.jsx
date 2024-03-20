@@ -12,7 +12,7 @@ function Navegacion() {
   
   return (
     <nav>
-      <div className='flex flex-row justify-between w-full shadow md:flex md:flex-row md:min-w-min md:shadow'>
+      <div className='flex flex-row justify-between w-full shadow md:flex md:flex-row md:min-w-min md:shadow' id='Inicio'>
         <div className='flex flex-row items-center md:flex md:gap-0 md:items-center md:ms-16'>
           <img src={DV} alt="DV Logo" className='p-1 min-w-16 w-16 h-16 lg:w-20 lg:h-20'/>  
         </div>
@@ -39,6 +39,16 @@ function Navegacion() {
             </div>
           </ul>
         </div>
+        <button className='fixed w-14 h-14 bottom-3 right-3 lg:hidden'>
+          <a href="#Inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-14 text-red-500">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </a>
+          
+        </button>
+        
+
       </div>
     </nav>
   );
