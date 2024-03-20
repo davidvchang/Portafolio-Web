@@ -12,7 +12,7 @@ function Navegacion() {
   
   return (
     <nav>
-      <div className='flex flex-row justify-between w-screen shadow md:flex md:flex-row md:min-w-min md:shadow'>
+      <div className='flex flex-row justify-between w-full shadow md:flex md:flex-row md:min-w-min md:shadow'>
         <div className='flex flex-row items-center md:flex md:gap-0 md:items-center md:ms-16'>
           <img src={DV} alt="DV Logo" className='p-1 min-w-16 w-16 h-16 lg:w-20 lg:h-20'/>  
         </div>
