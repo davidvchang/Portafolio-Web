@@ -1,0 +1,54 @@
+@import '../variables';
+
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+
+    .nameNav {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        width: 70%;
+        justify-content: space-between;
+
+        .nameLastName {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 32px;
+
+            .lastName {
+                color: $Azul-Principal;
+            }
+        }
+
+        .navs {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            justify-content: space-between;
+
+            // ------------------------------------------------------------
+            .Nav {
+                text-decoration: none;
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+    
+            }
+    
+            .Nav:hover {
+                color: $Azul-Principal;
+                transition: all;
+                transition-duration: 0.3s;
+            }
+            // ------------------------------------------------------------
+        }
+
+    }
+}
