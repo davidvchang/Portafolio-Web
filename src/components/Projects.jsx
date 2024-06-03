@@ -2,33 +2,56 @@ import React from 'react'
 import ProjectCard from './ui/ProjectCard'
 import PortafolioPhoto from '../assets/img/Portadas/Portafolio.webp'
 import PelisDev from '../assets/img/Portadas/PelisDev.webp'
+import ProfileX from '../assets/img/Portadas/Clon-Profile-X.webp'
 import UsedTechnology from './ui/UsedTechnology'
+import ButtonFollowLink from './ui/ButtonFollowLink'
 
 function Projects() {
   return (
     <section className='Projects'>
       <span className='titleProjects'>{iconProjects} Proyectos</span>
       <ProjectCard
+        linkInPortada='https://davidvalenzuela.vercel.app/'
         image={PortafolioPhoto}
         nameProject='Portafolio'
         title='Portafolio'
-        description='Mi portafolio web, creado con React y estilizado usando Sass, es mucho más que solo una colección de mis proyectos. Aquí puedes encontrar una selección de mis trabajos más destacados, está diseñado para ser intuitivo y visualmente atractivo.'
-        linkGitHub='https://github.com/davidvchang/Portafolio-Web'
-        linkVisit='https://davidvalenzuela.vercel.app/'>
-        <UsedTechnology icon={iconReact} text='React' />
-        <UsedTechnology icon={iconSass} text='Sass' />
-        <UsedTechnology icon={iconJavaScript} text='JavaScript' />
+        description='Mi portafolio web, creado con React y estilizado usando Sass, es mucho más que solo una colección de mis proyectos. 
+        Aquí puedes encontrar una selección de mis trabajos más destacados, está diseñado para ser intuitivo y visualmente atractivo.'
+        btnGit={<ButtonFollowLink link='https://github.com/davidvchang/Portafolio-Web' icon={iconGitHub} text='Ir al repositorio'/>}
+        btnPage={<ButtonFollowLink link='https://davidvalenzuela.vercel.app/' icon={iconVisit} text='Ir a la página web'/>}>
+
+        <UsedTechnology icon={iconReact} text='React' styleBG='BGReact'/>
+        <UsedTechnology icon={iconSass} text='Sass' styleBG='BGSass'/>
+        <UsedTechnology icon={iconJavaScript} text='JavaScript' styleBG='BGJavaScript'/>
       </ProjectCard>
+
       <ProjectCard
+        linkInPortada='https://github.com/davidvchang/PelisDev'
         image={PelisDev}
         nameProject='PelisDev'
         title='PelisDev'
-        description='Página web de pelicula inspirada en Cuevana, está hecha en React y estilada con Tailwind, se realizó solo la parte Front - End, se puede buscar peliculas por nombre o por categoría, así como cambiar de página.'
-        linkGitHub='https://github.com/davidvchang/PelisDev'
-        linkVisit=''>
-        <UsedTechnology icon={iconReact} text='React' />
-        <UsedTechnology icon={iconTailwind} text='Tailwind' />
-        <UsedTechnology icon={iconJavaScript} text='JavaScript' />
+        description='Página web de pelicula inspirada en Cuevana, está hecha en React y estilada con Tailwind, 
+        se realizó solo la parte Front - End, se puede buscar peliculas por nombre o por categoría, así como cambiar de página.'
+        btnGit={<ButtonFollowLink link='https://github.com/davidvchang/PelisDev' icon={iconGitHub} text='Ir al repositorio'/>}>
+
+        <UsedTechnology icon={iconReact} text='React' styleBG='BGReact'/>
+        <UsedTechnology icon={iconTailwind} text='Tailwind' styleBG='BGTailwind'/>
+        <UsedTechnology icon={iconJavaScript} text='JavaScript' styleBG='BGJavaScript'/>
+      </ProjectCard>
+
+      <ProjectCard
+        linkInPortada='https://clon-profile-x.netlify.app/'
+        image={ProfileX}
+        nameProject='Clon Perfil X'
+        title='Clon Perfil X'
+        description='Mi perfil de X(mejor conocido como Twitter), solo la parte Front end, está hecha en React y estilada con el pre-procesador Sass, 
+        así como también está hecha responsiva para que se adapte a diferentes dispositivos'
+        btnGit={<ButtonFollowLink link='https://github.com/davidvchang/Clon-Profile-X' icon={iconGitHub} text='Ir al repositorio'/>}
+        btnPage={<ButtonFollowLink link='https://clon-profile-x.netlify.app/' icon={iconVisit} text='Ir a la página web'/>}>
+
+        <UsedTechnology icon={iconReact} text='React' styleBG='BGReact'/>
+        <UsedTechnology icon={iconTailwind} text='Sass' styleBG='BGSass'/>
+        <UsedTechnology icon={iconJavaScript} text='JavaScript' styleBG='BGJavaScript'/>
       </ProjectCard>
     </section>
   )
@@ -53,6 +76,16 @@ const iconJavaScript = <svg xmlns="http://www.w3.org/2000/svg" width="2500" heig
 const iconTailwind = <svg viewBox="0 0 256 154" width="256" height="154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" className='iconTechReact'>
 <defs><linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="gradient"><stop stop-color="#2298BD" offset="0%"></stop><stop stop-color="#0ED7B5" offset="100%"></stop></linearGradient>
 </defs><path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z" fill="#2a2a2a"></path>
+</svg>
+
+
+
+const iconVisit = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 iconVisit ">
+<path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+</svg>
+
+const iconGitHub = <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github">
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>
 </svg>
 
 export default Projects

@@ -39,6 +39,8 @@
             overflow: hidden;
             border: 1px black solid;
             border-radius: 20px;
+            cursor: pointer;
+
             img {
                 position: absolute;
                 width: 100%;
@@ -49,8 +51,14 @@
                 transform: scale(1.1);
                 transition: all;
                 transition-duration: 0.3s;
-                filter: brightness(0.4);
+                filter: brightness(0.75);
             }
+        }
+
+        .PhotoPortada:hover {
+            transform: scale(1.03);
+            transition: all;
+            transition-duration: 0.3s;
         }
 
         .InfoProject {
@@ -79,22 +87,40 @@
                     flex-direction: row;
                     gap: 10px;
 
+                    .BGJavaScript {
+                        background-color: #FF9130;
+                        color: black;
+                    }
+
+                    .BGReact {
+                        
+                        background-color: #4D869C;
+                        color: white;
+                    }
+
+                    .BGSass {
+                        background-color: #A34343;  
+                    }
+
+                    .BGTailwind {
+                        background-color: #496989;
+                    }
+
                     .userTech {
                         display: flex;
                         flex-direction: row;
                         min-height: 15px;
                         max-height: 20px;
                         padding: 0 10px;
-                        color: black;
                         border: 1px grey solid;
+                        // background-color: rgb(166, 172, 177);
                         border-radius: 90px;
                         justify-content: center;
                         align-items: center;
                         gap: 5px;
-                        background-color: rgb(166, 172, 177);
-                        color: black;
+                        color: white;
                         font-weight: 400;
-                        font-size: 14px;
+                        font-size: 13px;
                         cursor: default;
 
                         .iconTechReact {
@@ -114,7 +140,7 @@
             .GitHubVisit {
                 display: flex;
                 flex-direction: row;
-                gap: 20px;
+                gap: 15px;
 
                 a {
                     padding: 5px 15px;
