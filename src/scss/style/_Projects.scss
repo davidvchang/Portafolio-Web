@@ -22,4 +22,126 @@
             width: 28px;
         }
     }
+
+    .ProjectCard {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 150px;
+        font-size: 15px;
+        gap: 20px;
+
+        .PhotoPortada {
+            position: relative;
+            min-width: 400px;
+            height: auto;
+            overflow: hidden;
+            border: 1px black solid;
+            border-radius: 20px;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+                transition: all;
+                transition-duration: 0.3s;
+                filter: brightness(0.4);
+            }
+        }
+
+        .InfoProject {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            min-height: 200px;
+            justify-content: space-between;
+
+            .titleDescription {
+                display: flex;
+                flex-direction: column;
+
+                .titleNameProject {
+                    font-size: 27px;
+                    font-weight: 600;
+                }
+
+                p{
+                    padding-bottom: 5px;
+                }
+
+                .usedTechnology {
+                    display: flex;
+                    min-height: fit-content;
+                    flex-direction: row;
+                    gap: 10px;
+
+                    .userTech {
+                        display: flex;
+                        flex-direction: row;
+                        min-height: 15px;
+                        max-height: 20px;
+                        padding: 0 10px;
+                        color: black;
+                        border: 1px grey solid;
+                        border-radius: 90px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 5px;
+                        background-color: rgb(166, 172, 177);
+                        color: black;
+                        font-weight: 400;
+                        font-size: 14px;
+                        cursor: default;
+
+                        .iconTechReact {
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        .iconTechJS{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+
+
+            .GitHubVisit {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                a {
+                    padding: 5px 15px;
+                    width: fit-content;
+                    flex-direction: row;
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+                    background-color: $Color-Buttons;
+                    border: 1px grey solid;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    color: black;
+
+                    .iconVisit {
+                        width: 22px;
+                    }
+                }
+
+                a:hover {
+                    border: 1px $Azul-Principal solid;
+                    background-color: $Azul-Principal;
+                    color: white;
+                    transition: all;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+    }
 }
