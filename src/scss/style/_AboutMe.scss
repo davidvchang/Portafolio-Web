@@ -1,0 +1,35 @@
+@import '../variables';
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    justify-content: center;
+
+    .titleAboutMe {
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        width: 100%;
+        border-bottom: 1px grey solid;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .iconAboutMe {
+            width: 28px;
+        }
+    }
+
+    .textAboutMe {
+        color: black;
+        font-size: 15px;
+
+        span {
+            color: $Azul-Principal;
+            font-weight: 600;
+        }
+    }
+}

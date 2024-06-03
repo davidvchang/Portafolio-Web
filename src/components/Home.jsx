@@ -28,7 +28,7 @@ function Home() {
                 <div className='presentationInfo'>
                     <span className='hello'>Hola, mi nombre es</span>
                     <div className='nameLastNamePresentation'>
-                        <span>David</span>
+                        <span className='namePresentation'>David</span>
                         <span className='lastNamePresentation'>Valenzuela</span>
                     </div>
                     <span className='ocupation'>Programador | Desarrollador Web Front - End</span>

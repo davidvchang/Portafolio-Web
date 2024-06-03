@@ -1,0 +1,25 @@
+@import '../variables';
+
+.Projects {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    justify-content: center;
+
+    .titleProjects {
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        width: 100%;
+        border-bottom: 1px grey solid;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .iconProjects {
+            width: 28px;
+        }
+    }
+}

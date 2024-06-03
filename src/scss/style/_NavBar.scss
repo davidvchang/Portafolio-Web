@@ -4,14 +4,14 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 60px;
+    min-height: 60px;
     justify-content: center;
 
     .nameNav {
         flex-direction: row;
         display: flex;
         align-items: center;
-        width: 70%;
+        width: 50%;
         justify-content: space-between;
 
         .nameLastName {
@@ -21,6 +21,10 @@
             color: white;
             font-weight: 600;
             font-size: 32px;
+
+            .name {
+                color: black
+            }
 
             .lastName {
                 color: $Azul-Principal;
@@ -39,6 +43,7 @@
                 color: white;
                 font-weight: 300;
                 font-size: 20px;
+                color: black;
     
             }
     
@@ -46,6 +51,7 @@
                 color: $Azul-Principal;
                 transition: all;
                 transition-duration: 0.3s;
+                border-bottom: 1px $Azul-Principal solid;
             }
             // ------------------------------------------------------------
         }

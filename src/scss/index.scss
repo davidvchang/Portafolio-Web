@@ -1,6 +1,10 @@
 @import './variables';
 @import './style/NavBar';
 @import './style/Home';
+@import './style/AboutMe';
+@import './style/Skills';
+@import './style/Projects';
+
 
 
 *{
@@ -9,7 +13,7 @@
 }
 
 .main{
-    background-color: $Fondo-Principal;
+    background-color: white;
     font-family: var(--font-Poppins);
     display: flex;
     flex-direction: column;

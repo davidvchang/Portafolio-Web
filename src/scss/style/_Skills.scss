@@ -1,0 +1,90 @@
+@import '../variables';
+
+.Skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    justify-content: center;
+
+    .titleSkills {
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        width: 100%;
+        border-bottom: 1px grey solid;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .iconSkills {
+            width: 28px;
+        }
+    }
+
+    .skillsTechnology {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        row-gap: 10px;
+        column-gap: 20px;
+        justify-content: center;
+
+        .Technology {
+            width: fit-content;
+            height: 30px;
+            padding: 10px 20px;
+            background-color: #D9D9D9;
+            border: 1px grey solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            border-radius: 10px;
+            
+            .iconTechnology {
+                width: 25px;
+                height: 25px;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .iconHtmlCss {
+                width: 23px;
+                height: 23px;
+            }
+
+            .iconPython {
+                width: 47px;
+                height: 47px;
+            }
+
+            .iconSassTailwind {
+                width: 30px;
+                height: 30px;
+            }
+
+            .iconBootstrap {
+                width: 27px;
+                height: 27px;
+            }
+        }
+
+        .Technology:hover {
+            // background-color: $Azul-Principal;
+            // border: 1px $Azul-Principal solid;
+            // cursor: pointer;
+            // color: white;
+            transition: all;
+            transition-duration: 0.3s;
+            cursor: default;
+            transform: scale(1.1)
+        }
+    }
+
+}
