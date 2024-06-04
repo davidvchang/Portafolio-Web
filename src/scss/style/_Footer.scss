@@ -1,0 +1,77 @@
+@import '../variables';
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 20px 0;
+    gap: 10px;
+
+    .titleContactMe {
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        width: 100%;
+        border-bottom: 1px grey solid;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .iconProjects {
+            width: 28px;
+        }
+    }
+
+    .containerSocials {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8px;
+        justify-content: space-between;
+
+        .mail {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+    
+            .iconMailFooter {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    
+        .linkedin {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            justify-content: center;
+            align-items: end;
+    
+            .iconFooter {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    
+        .x {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            justify-content: center;
+            align-items: end;
+    
+            .iconXFooter {
+                width: 17px;
+                height: 17px;
+            }
+        }
+    }
+
+}

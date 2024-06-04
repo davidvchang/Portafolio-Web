@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    <section className='AboutMe'>
+    <section className='AboutMe' id='AboutMe'>
         <span className='titleAboutMe'>{iconAboutMe} Sobre mi</span>
         <p className='textAboutMe'><br/>Hola, soy David, <span>Ing. en Sistemas Computacionales</span> me considero alguien apasionado por el desarrollo web y la programación, 
             con una gran motivación por aprender nuevastecnologías día con día, me encanta realizar pequeños proyectos que desafíen mi creatividad y habilidades, 

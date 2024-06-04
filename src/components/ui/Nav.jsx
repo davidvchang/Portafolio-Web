@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Nav({link, text}) {
+function Nav({link, text, handle}) {
   return (
-    <a href={link} className='Nav'>{text}</a>
+    <a href={link} className='Nav' onClick={handle}>{text}</a>
   )
 }
 

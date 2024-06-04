@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe"
+import Footer from "./components/Footer"
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 import Projects from "./components/Projects"
@@ -13,6 +14,7 @@ function App() {
       <AboutMe/>
       <Skills/>
       <Projects/>
+      <Footer/>
     </main>
   )
 }
