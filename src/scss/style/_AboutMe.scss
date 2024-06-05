@@ -34,3 +34,22 @@
         }
     }
 }
+
+//VERSION MOVIL
+@media screen and (max-width: 640px) {
+    .AboutMe {
+        width: 100%;
+
+        .titleAboutMe {
+            padding: 0 0 10px 0;
+
+            .iconAboutMe {
+                margin-left: 10px;
+            }
+        }
+    
+        .textAboutMe {
+            padding: 0 0 0 14px;
+        }
+    }
+}

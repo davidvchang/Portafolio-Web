@@ -57,4 +57,149 @@
         }
 
     }
+
+    .navsMovil{
+        display: none;
+    }
+}
+
+//VERSION MOVIL
+@media screen and (max-width: 640px) {
+    .NavBar {
+        width: 100vw;
+        .nameNav {
+            display: none;
+        }
+
+        .navsMovil {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: end;
+            padding: 10px;
+
+            .nameLastName {
+                display: flex;
+                flex-direction: row;
+                gap: 0;
+                color: white;
+                font-weight: 600;
+                font-size: 45px;
+                position: absolute;
+                left: 10px;
+                z-index: 2;
+                .nameMovil{
+                    color: #000;
+                }
+
+                .lastNameMovil {
+                    color: $Azul-Principal;
+                }
+            }
+
+            .btnMenu {
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                border: none;
+                background-color: white;
+
+                .iconMenu {
+                    width: 40px;
+                    height: 40px;
+                    color: black;
+                }
+            }
+
+            .btnMenu:hover {
+                background-color: white;
+                cursor: pointer;
+                .iconMenu {
+                    color: $Azul-Principal;
+                }
+            }
+
+
+            .menuCerrado {
+                height: 0px;
+            }
+            
+            .containerHiddenMenu {
+                display: none;
+            }
+
+            .navDesplegable {
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                height: 233px;
+                position: absolute;
+                background-color: #D9D9D9;
+                top: 0;
+                left: 0;
+                align-items: center;
+                padding: 10px 0;
+                z-index: 1;
+                transition: all;
+                transition-duration: 0.3s;
+                border-radius: 5px;
+                overflow: hidden;
+                -webkit-box-shadow: 0px 3px 6px 0px rgb(82, 81, 81);
+                -moz-box-shadow: 0px 3px 6px 0px rgb(63, 63, 63);
+                box-shadow: 0px 3px 6px 0px rgb(150, 148, 148);;
+
+                .containerCloseMenu {
+                    width: 100vw;
+                    min-height: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    padding: 0 20px 0 0;
+                    border-bottom: 1px rgb(201, 193, 193) solid;
+                    
+
+                    .btnCloseMenu {
+                        display: flex;
+                        width: fit-content;
+                        height: fit-content;
+                        border: none;
+                        background-color: #D9D9D9;
+
+                        .iconCloseMenu {
+                            width: 40px;
+                            height: 40px;
+                            color: black;
+                        }
+                    }
+
+                    .btnCloseMenu:hover {
+                        background-color: #D9D9D9;
+                        cursor: pointer;
+                        .iconCloseMenu {
+                            color: $Azul-Principal;
+                        }
+                    }
+                }
+
+                .navsMovil {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    width: 100%;
+                    background-color: #D9D9D9;
+                    align-items: center;
+                    padding: 10px 0 20px 0;
+
+                    .NavMovil {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 300;
+                        font-size: 20px;
+                        color: black;
+                    }
+                }
+
+            }
+        }
+    }
 }

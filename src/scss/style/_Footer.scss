@@ -24,6 +24,7 @@
 
         .iconProjects {
             width: 28px;
+            margin-left: 10px;
         }
     }
 
@@ -44,6 +45,7 @@
             .iconMailFooter {
                 width: 23px;
                 height: 23px;
+                margin-left: 10px;
             }
         }
     
@@ -57,6 +59,7 @@
             .iconFooter {
                 width: 20px;
                 height: 20px;
+                margin-left: 10px;
             }
         }
     
@@ -70,8 +73,52 @@
             .iconXFooter {
                 width: 17px;
                 height: 17px;
+                margin-left: 10px;
             }
         }
     }
 
+}
+
+//VERSION MOVIL
+@media screen and (max-width: 640px) {
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        gap: 10px;
+
+        .titleContactMe{
+            padding-left: 10px 0;
+            border: none;
+        }
+
+        .containerSocials {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 8px;
+            align-items: start;
+            padding-left: 14px 0;
+
+            .mail {
+                justify-content: start;
+                align-items: center;
+            }
+        
+            .linkedin {
+                justify-content: start;
+                align-items: center;
+            }
+        
+            .x {
+                justify-content: start;
+                align-items: center;
+            }
+        }
+    }
 }

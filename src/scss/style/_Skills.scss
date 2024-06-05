@@ -88,3 +88,23 @@
     }
 
 }
+
+//VERSION MOVIL
+@media screen and (max-width: 640px) {
+    .Skills {
+        width: 100vw;
+
+        .titleSkills {
+            padding: 10px 0;
+
+            .iconSkills {
+                margin-left: 10px;
+            }
+        }
+
+        .skillsTechnology {
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+    }
+}
