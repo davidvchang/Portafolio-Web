@@ -153,12 +153,9 @@
 }
 
 //VERSION MOVIL
-@media screen and (max-width: 640px){
+@media screen and (max-width: 768px){
     .Home{
         width: 100vw;
-
-        
-
         .PhotoPresentation {
             display: flex;
             flex-direction: column;
@@ -227,3 +224,220 @@
         }
     }
 }
+
+@media screen and (min-width: 769px)  and (max-width: 1024px){
+    .Home{
+        width: 85%;
+        .PhotoPresentation {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 30px;
+            justify-content: space-around;
+
+            .photoSocialNetwork {
+                gap: 20px;
+                .photo {
+                    position: relative;
+                    width: 160px;
+                    height: 160px;
+        
+                    img {
+                        bottom: -20px;
+                        left: 12px;
+                    }
+                }
+            }
+
+            .presentation {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                align-items: start;
+                gap: 20px;
+
+                .presentationInfo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    line-height: 1.2;
+
+                    .hello {
+                        font-size: 20px;
+                    }
+        
+                    .nameLastNamePresentation {
+                        font-size: 40px;
+                        font-weight: 500;
+                        align-items: center;
+    
+                        .namePresentation {
+                            color: black;
+                        }
+        
+                        .lastNamePresentation {
+                            color: $Azul-Principal;
+                        }
+                    }
+        
+                    .ocupation {
+                        font-size: 15px;
+                    }
+                }
+
+                .DownloadCV {
+                    font-size: 14px;
+                    padding: 14px 25px;
+                    .iconDownload {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px)  and (max-width: 1280px){
+    .Home{
+        width: 85%;
+        .PhotoPresentation {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 30px;
+            justify-content: space-around;
+
+            .photoSocialNetwork {
+                gap: 20px;
+                .photo {
+                    position: relative;
+                    width: 160px;
+                    height: 160px;
+        
+                    img {
+                        bottom: -20px;
+                        left: 12px;
+                    }
+                }
+            }
+
+            .presentation {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                align-items: start;
+                gap: 20px;
+
+                .presentationInfo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    line-height: 1.2;
+
+                    .hello {
+                        font-size: 20px;
+                    }
+        
+                    .nameLastNamePresentation {
+                        font-size: 40px;
+                        font-weight: 500;
+                        align-items: center;
+    
+                        .namePresentation {
+                            color: black;
+                        }
+        
+                        .lastNamePresentation {
+                            color: $Azul-Principal;
+                        }
+                    }
+        
+                    .ocupation {
+                        font-size: 15px;
+                    }
+                }
+
+                .DownloadCV {
+                    font-size: 14px;
+                    padding: 14px 25px;
+                    .iconDownload {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1281px)  and (max-width: 1536px){
+    .Home{
+        width: 100%;
+        .PhotoPresentation {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            gap: 30px;
+            justify-content: space-around;
+
+            .photoSocialNetwork {
+                gap: 20px;
+                .photo {
+                    position: relative;
+                    width: 180px;
+                    height: 180px;
+        
+                    img {
+                        bottom: -20px;
+                        left: 12px;
+                    }
+                }
+            }
+
+            .presentation {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                align-items: start;
+                gap: 20px;
+
+                .presentationInfo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    line-height: 1.2;
+
+                    .hello {
+                        font-size: 22px;
+                    }
+        
+                    .nameLastNamePresentation {
+                        font-size: 46px;
+                        font-weight: 500;
+                        align-items: center;
+    
+                        .namePresentation {
+                            color: black;
+                        }
+        
+                        .lastNamePresentation {
+                            color: $Azul-Principal;
+                        }
+                    }
+        
+                    .ocupation {
+                        font-size: 16px;
+                    }
+                }
+
+                .DownloadCV {
+                    font-size: 15px;
+                    padding: 10px 25px;
+                    .iconDownload {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+

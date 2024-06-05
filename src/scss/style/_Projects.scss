@@ -198,7 +198,81 @@
             .PhotoPortada {
                 position: relative;
                 min-width: 360px;
-                min-height: 220px;
+                min-height: auto;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .PhotoPortada:hover {
+                transform: scale(1.01);
+            }
+
+            .InfoProject {
+
+                .titleDescription {
+                    width: 100%;
+
+                    .titleNameProject {
+                        font-size: 27px;
+                        font-weight: 600;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    p{
+                        margin-left: 10px;
+                    }
+
+                    .usedTechnology {
+                        display: flex;
+                        min-height: fit-content;
+                        flex-direction: row;
+                        gap: 10px;
+                        margin-top: 5px;
+                        justify-content: center;
+                    }
+                }
+                
+                .GitHubVisit {
+                    margin-top: 20px;
+                    justify-content: space-around;
+    
+                    a {
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Projects {
+        width: auto;
+
+        .titleProjects {
+            padding: 10px 0;
+
+            .iconProjects {
+                margin-left: 10px;
+            }
+        }
+
+        .ProjectCard {  
+            padding: 20px 0 14px 0;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            min-height: fit-content;
+            font-size: 15px;
+            gap: 20px;
+            border-bottom: 1px rgb(201, 193, 193) solid;
+            align-items: center;
+
+            .PhotoPortada {
+                position: relative;
+                max-width: 400px;
+                min-height: 190px;
                 overflow: hidden;
                 border: 1px black solid;
                 border-radius: 20px;
@@ -246,6 +320,157 @@
                     a {
                         padding: 10px 15px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px)  and (max-width: 1024px) {
+    .Projects {
+        width: 85%;
+
+        .titleProjects {
+            padding: 10px 0;
+
+            .iconProjects {
+                margin-left: 10px;
+            }
+        }
+
+        .ProjectCard {  
+            padding: 20px 0 14px 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: fit-content;
+            font-size: 15px;
+            gap: 20px;
+            border-bottom: 1px rgb(201, 193, 193) solid;
+            align-items: center;
+
+            .PhotoPortada {
+                position: relative;
+                max-width: 400px;
+                min-height: 220px;
+                overflow: hidden;
+                border: 1px black solid;
+                border-radius: 20px;
+                cursor: pointer;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .PhotoPortada:hover {
+                transform: scale(1.01);
+                transition: all;
+                transition-duration: 0.3s;
+            }
+
+            .InfoProject {
+
+                .titleDescription {
+                    width: 100%;
+
+                    .titleNameProject {
+                        font-size: 27px;
+                        font-weight: 600;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    p{
+                        margin-left: 10px;
+                        font-size: 15px;
+                        
+                    }
+
+                    .usedTechnology {
+                        display: flex;
+                        min-height: fit-content;
+                        flex-direction: row;
+                        gap: 10px;
+                        margin-top: 5px;
+                        justify-content: center;
+                    }
+                }
+                
+                .GitHubVisit {
+                    margin-top: 30px;
+                    gap: 60px;
+                    justify-content: center;
+    
+                    a {
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px)  and (max-width: 1280px) {
+    .Projects {
+        width: 85%;
+
+        .titleProjects {
+            padding: 10px 0;
+
+        }
+
+        .ProjectCard {  
+            padding: 20px 0 14px 0;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: fit-content;
+            border-bottom: 1px rgb(201, 193, 193) solid;
+            align-items: center;
+
+            .PhotoPortada {
+                position: relative;
+                max-width: 400px;
+                min-height: 220px;
+            }
+
+            .InfoProject {
+                
+                .GitHubVisit {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1281px)  and (max-width: 1536px) {
+    .Projects {
+        width: 60%;
+
+        .titleProjects {
+            padding: 10px 0;
+
+        }
+
+        .ProjectCard {  
+            padding: 20px 0 14px 0;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: fit-content;
+            border-bottom: 1px rgb(201, 193, 193) solid;
+            align-items: center;
+
+            .PhotoPortada {
+                position: relative;
+                max-width: 400px;
+                min-height: 220px;
+            }
+
+            .InfoProject {
+                
+                .GitHubVisit {
+                    margin-top: 20px;
                 }
             }
         }

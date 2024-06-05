@@ -1,10 +1,10 @@
 import React from 'react'
 import ProjectCard from './ui/ProjectCard'
-import PortafolioPhoto from '../assets/img/Portadas/Portafolio.webp'
-import PelisDev from '../assets/img/Portadas/PelisDev.webp'
-import ProfileX from '../assets/img/Portadas/Clon-Profile-X.webp'
 import UsedTechnology from './ui/UsedTechnology'
 import ButtonFollowLink from './ui/ButtonFollowLink'
+import PortadaPortafolio from '../assets/img/Portadas/MockuUpPortafolio.webp'
+import PortadaPelisDev from '../assets/img/Portadas/MockUpPelisDev.webp'
+import PortadaClonX from '../assets/img/Portadas/MockUpClonX.webp'
 
 function Projects() {
   return (
@@ -12,7 +12,7 @@ function Projects() {
       <span className='titleProjects'>{iconProjects} Proyectos</span>
       <ProjectCard
         linkInPortada='https://davidvalenzuela.vercel.app/'
-        image={PortafolioPhoto}
+        image={PortadaPortafolio}
         nameProject='Portafolio'
         title='Portafolio'
         description='Mi portafolio web, creado con React y estilizado usando Sass, es mucho más que solo una colección de mis proyectos. 
@@ -27,7 +27,7 @@ function Projects() {
 
       <ProjectCard
         linkInPortada='https://github.com/davidvchang/PelisDev'
-        image={PelisDev}
+        image={PortadaPelisDev}
         nameProject='PelisDev'
         title='PelisDev'
         description='Página web de pelicula inspirada en Cuevana, está hecha en React y estilada con Tailwind, 
@@ -41,7 +41,7 @@ function Projects() {
 
       <ProjectCard
         linkInPortada='https://clon-profile-x.netlify.app/'
-        image={ProfileX}
+        image={PortadaClonX}
         nameProject='Clon Perfil X'
         title='Clon Perfil X'
         description='Mi perfil de X(mejor conocido como Twitter), solo la parte Front end, está hecha en React y estilada con el pre-procesador Sass, 
