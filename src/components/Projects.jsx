@@ -32,7 +32,8 @@ function Projects() {
         title='PelisDev'
         description='Página web de pelicula inspirada en Cuevana, está hecha en React y estilada con Tailwind, 
         se realizó solo la parte Front - End, se puede buscar peliculas por nombre o por categoría, así como cambiar de página.'
-        btnGit={<ButtonFollowLink link='https://github.com/davidvchang/PelisDev' icon={iconGitHub} text='Ir al repositorio'/>}>
+        btnGit={<ButtonFollowLink link='https://github.com/davidvchang/PelisDev' icon={iconGitHub} text='Ir al repositorio'/>}
+        btnPage={<ButtonFollowLink link='https://pelis-dev.netlify.app/' icon={iconVisit} text='Ir a la página web'/>}>
 
         <UsedTechnology icon={iconReact} text='React' styleBG='BGReact'/>
         <UsedTechnology icon={iconTailwind} text='Tailwind' styleBG='BGTailwind'/>
