@@ -26,7 +26,7 @@ function Projects() {
       </ProjectCard>
 
       <ProjectCard
-        linkInPortada='https://github.com/davidvchang/PelisDev'
+        linkInPortada='https://pelis-dev.netlify.app/'
         image={PortadaPelisDev}
         nameProject='PelisDev'
         title='PelisDev'
