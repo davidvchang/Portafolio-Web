@@ -5,11 +5,30 @@ import ButtonFollowLink from './ui/ButtonFollowLink'
 import PortadaPortafolio from '../assets/img/Portadas/MockuUpPortafolio.webp'
 import PortadaPelisDev from '../assets/img/Portadas/MockUpPelisDev.webp'
 import PortadaClonX from '../assets/img/Portadas/MockUpClonX.webp'
+import PortadaBiblioteca from '../assets/img/Portadas/MockUpBiblioteca.webp'
 
 function Projects() {
   return (
     <section className='Projects' id='Projects'>
       <span className='titleProjects'>{iconProjects} Proyectos</span>
+      <ProjectCard
+        linkInPortada='https://biblioteca-davidvalenzuela.vercel.app/'
+        image={PortadaBiblioteca}
+        nameProject='Biblioteca'
+        title='Biblioteca'
+        description='Biblioteca creada con Express, NodeJS y MongoDB para el backend y React, JavaScript y Sass en el frontend. 
+        la biblioteca consiste en la cual puedes añadir libros, editarlos y eliminarlos solamente si estás registrado e iniciaste sesión, 
+        si no, solamente te deja ver los libros disponibles y buscarlos mediante género o nombre del libro.'
+        btnGit={<ButtonFollowLink link='https://github.com/davidvchang/Biblioteca/' icon={iconGitHub} text='Ir al repositorio'/>}
+        btnPage={<ButtonFollowLink link='https://biblioteca-davidvalenzuela.vercel.app/' icon={iconVisit} text='Ir a la página web'/>}>
+
+        <UsedTechnology icon={iconExpressJS} text='Express' styleBG='BGJavaScript'/>
+        <UsedTechnology icon={iconMongoDB} text='MongoDB' styleBG='BGMongoDB'/>
+        <UsedTechnology icon={iconReact} text='React' styleBG='BGReact'/>
+        <UsedTechnology icon={iconSass} text='Sass' styleBG='BGSass'/>
+        <UsedTechnology icon={iconJavaScript} text='JavaScript' styleBG='BGJavaScript'/>
+      </ProjectCard>
+
       <ProjectCard
         linkInPortada='https://davidvalenzuela.vercel.app/'
         image={PortadaPortafolio}
@@ -77,6 +96,13 @@ const iconJavaScript = <svg xmlns="http://www.w3.org/2000/svg" width="2500" heig
 const iconTailwind = <svg viewBox="0 0 256 154" width="256" height="154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" className='iconTechReact'>
 <defs><linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="gradient"><stop stop-color="#2298BD" offset="0%"></stop><stop stop-color="#0ED7B5" offset="100%"></stop></linearGradient>
 </defs><path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z" fill="#2a2a2a"></path>
+</svg>
+
+const iconMongoDB =  <svg viewBox="0 0 256 549" xmlns="http://www.w3.org/2000/svg" width="256" height="549" preserveAspectRatio="xMidYMid" className='iconTechReact'>
+  <path fill="#2a2a2a" d="M175.622 61.108C152.612 33.807 132.797 6.078 128.749.32a1.03 1.03 0 0 0-1.492 0c-4.048 5.759-23.863 33.487-46.874 60.788-197.507 251.896 31.108 421.89 31.108 421.89l1.917 1.28c1.704 26.234 5.966 63.988 5.966 63.988h17.045s4.26-37.54 5.965-63.987l1.918-1.494c.213.214 228.828-169.78 31.32-421.677Zm-47.726 418.05s-10.227-8.744-12.997-13.222v-.428l12.358-274.292c0-.853 1.279-.853 1.279 0l12.357 274.292v.428c-2.77 4.478-12.997 13.223-12.997 13.223Z"/>
+</svg>
+const iconExpressJS = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" className='iconTechReact'>
+  <path fill="#fff" d="M32 24.795c-1.164.296-1.884.013-2.53-.957l-4.594-6.356-.664-.88-5.365 7.257c-.613.873-1.256 1.253-2.4.944l6.87-9.222-6.396-8.33c1.1-.214 1.86-.105 2.535.88l4.765 6.435 4.8-6.4c.615-.873 1.276-1.205 2.38-.883l-2.48 3.288-3.36 4.375c-.4.5-.345.842.023 1.325L32 24.795zM.008 15.427l.562-2.764C2.1 7.193 8.37 4.92 12.694 8.3c2.527 1.988 3.155 4.8 3.03 7.95H1.48c-.214 5.67 3.867 9.092 9.07 7.346 1.825-.613 2.9-2.042 3.438-3.83.273-.896.725-1.036 1.567-.78-.43 2.236-1.4 4.104-3.45 5.273-3.063 1.75-7.435 1.184-9.735-1.248C1 21.6.434 19.812.18 17.9c-.04-.316-.12-.617-.18-.92q.008-.776.008-1.552zm1.498-.38h12.872c-.084-4.1-2.637-7.012-6.126-7.037-3.83-.03-6.58 2.813-6.746 7.037z"/>
 </svg>
 
 

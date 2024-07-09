@@ -84,7 +84,7 @@
                 .usedTechnology {
                     display: flex;
                     min-height: fit-content;
-                    flex-direction: row;
+                    flex-wrap: wrap;
                     gap: 10px;
 
                     .BGJavaScript {
@@ -104,6 +104,10 @@
 
                     .BGTailwind {
                         background-color: #496989;
+                    }
+
+                    .BGMongoDB {
+                        background-color: rgb(30, 112, 30);
                     }
 
                     .userTech {
