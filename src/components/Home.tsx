@@ -1,4 +1,5 @@
 import React from 'react'
+import ProfilePhoto from '../assets/img/FotoPerfil.webp'
 
 const Home:React.FC = () => {
   return (
@@ -13,8 +14,8 @@ const Home:React.FC = () => {
                 <a href="" className='w-fit h-fit px-16 py-3 rounded bg-[#1C99EC] text-white font-medium hover:brightness-95 hover:transition duration-300'>Ver CV</a>
             </div>
 
-            <div className='w-60 h-60 rounded-full bg-red-300 '>
-                <img src="" alt="" />
+            <div className='w-72 h-72 rounded-full relative border-4 border-blue-500 bg-[#7193BE]'>
+                <img src={ProfilePhoto} alt="FotoPerfil" className='w-full h-80 object-cover absolute rounded-full bottom-0'/>
             </div>
 
         </div>
