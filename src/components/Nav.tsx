@@ -7,7 +7,7 @@ interface PropsNav{
 
 const Nav:React.FC<PropsNav> = ({ text, link }) => {
   return (
-    <a href={link} className='hover:text-blue-500 hover:transition duration-300 hover:cursor-pointer'>{text}</a>
+    <a href={link} className='hover:text-[#1C99EC] hover:transition duration-300 hover:cursor-pointer dark:text-slate-100'>{text}</a>
   )
 }
 
