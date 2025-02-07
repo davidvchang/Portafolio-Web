@@ -23,10 +23,10 @@ const NavBar:React.FC = () => {
             <Nav text='Contactame'/>
 
             {isDark === true ? (
-              <button className='p-2 bg-slate-100 rounded cursor-pointer border border-slate-200 hover:bg-slate-200 hover:transition duration-300' onClick={toggleMode}><Moon className='w-5 h-5'/></button>
-
-            ): (
               <button className='p-2 bg-slate-700 border-slate-600 text-amber-300 rounded cursor-pointer border hover:bg-slate-600 hover:transition duration-300' onClick={toggleMode}><Sun className='w-5 h-5'/></button>
+              
+            ): (
+              <button className='p-2 bg-slate-100 rounded cursor-pointer border border-slate-200 hover:bg-slate-200 hover:transition duration-300' onClick={toggleMode}><Moon className='w-5 h-5'/></button>
 
             )}
         </div>
