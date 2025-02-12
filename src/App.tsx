@@ -1,5 +1,6 @@
 import Home from "./sections/Home"
 import NavBar from "./sections/NavBar"
+import ProfessionalExperience from "./sections/ProfessionalExperience"
 import Projects from "./sections/Projects"
 import Skills from "./sections/Skills"
 
@@ -11,6 +12,7 @@ function App() {
       <Home/>
       <Projects/>
       <Skills/>
+      <ProfessionalExperience/>
     </main>
   )
 }
