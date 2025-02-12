@@ -12,7 +12,7 @@ const NavBar:React.FC = () => {
   }
 
   return (
-    <div className='w-full h-16 bg-white flex items-center justify-between px-5 fixed z-99 shadow dark:bg-[#1B2533] dark:border-b dark:border-b-sky-950'>
+    <div className='w-full h-16 bg-white opacity-90 flex items-center justify-between px-5 fixed z-99 shadow dark:bg-[#1B2533] dark:border-b dark:border-b-sky-950'>
         <span className='text-[44px] font-semibold text-[#1C99EC]'>DV</span>
 
         <div className='w-fit flex gap-10 items-center'>
