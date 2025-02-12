@@ -4,7 +4,7 @@ import ContactMeCard from '../components/ContactMeCard';
 
 const ContactMe:React.FC = () => {
   return (
-    <section className='flex flex-col w-full h-full items-center justify-center bg-slate-50 py-14 dark:bg-[#101827]'>
+    <section className='flex flex-col w-full h-full items-center justify-center bg-slate-50 py-14 dark:bg-[#101827]' id='contactme'>
         <div className='flex flex-col gap-14 w-[80%] dark:text-white items-center'>
             <span className='text-3xl w-full text-center'>Contactame</span>
 

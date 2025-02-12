@@ -3,7 +3,7 @@ import ProfilePhoto from '../assets/img/FotoPerfil.webp'
 
 const Home:React.FC = () => {
   return (
-    <div className='flex w-full h-[100vh] items-center justify-center'>
+    <div className='flex w-full h-[100vh] items-center justify-center' id='home'>
         <div className='flex w-[70%] h-[100vh] items-center justify-between'>
             <div className='flex flex-col gap-7'>
                 <div className='flex flex-col gap-3'>

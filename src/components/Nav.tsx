@@ -2,12 +2,12 @@ import React from 'react'
 
 interface PropsNav{
     text: string,
-    link?: string
+    onClick?: () => void
 }
 
-const Nav:React.FC<PropsNav> = ({ text, link }) => {
+const Nav:React.FC<PropsNav> = ({ text, onClick }) => {
   return (
-    <a href={link} className='hover:text-[#1C99EC] hover:transition duration-300 hover:cursor-pointer dark:text-slate-100'>{text}</a>
+    <button onClick={onClick} className='hover:text-[#1C99EC] hover:transition duration-300 hover:cursor-pointer dark:text-slate-100'>{text}</button>
   )
 }
 
