@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Nav from './Nav'
+import Nav from '../components/Nav'
 import { Moon, Sun } from 'lucide-react';
 
 const NavBar:React.FC = () => {

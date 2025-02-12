@@ -1,7 +1,7 @@
 import React from 'react'
-import ProjectContainer from './ProjectContainer'
-import TechnologyUsed from './TechnologyUsed'
-import BtnProject from './BtnProject'
+import ProjectContainer from '../components/ProjectContainer'
+import TechnologyUsed from '../components/TechnologyUsed'
+import BtnProject from '../components/BtnProject'
 
 import { Github, Link } from 'lucide-react';
 

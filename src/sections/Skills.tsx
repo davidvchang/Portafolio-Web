@@ -1,5 +1,5 @@
 import React from 'react'
-import SkillContainer from './SkillContainer'
+import SkillContainer from '../components/SkillContainer.tsx'
 import Icons from '../assets/icon.tsx'
 
 const Skills:React.FC = () => {

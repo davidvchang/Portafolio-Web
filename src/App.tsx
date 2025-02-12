@@ -1,7 +1,7 @@
-import Home from "./components/Home"
-import NavBar from "./components/NavBar"
-import Projects from "./components/Projects"
-import Skills from "./components/Skills"
+import Home from "./sections/Home"
+import NavBar from "./sections/NavBar"
+import Projects from "./sections/Projects"
+import Skills from "./sections/Skills"
 
 function App() {
 
