@@ -11,8 +11,8 @@ interface PropsProject {
 const ProjectContainer:React.FC<PropsProject> = ( {title, description, children, children2, image}) => {
   return (
     <div className='flex flex-col w-[23rem] h-full border border-slate-200 rounded-xl overflow-hidden dark:border-sky-900'>
-        <div className='w-full h-52 bg-amber-200'>
-            <img src={image} alt="" className='w-full h-full object-cover'/>
+        <div className='w-full h-52 bg-amber-200 overflow-hidden'>
+            <img src={image} alt="" className='w-full h-full object-cover hover:scale-105 hover:transition duration-300'/>
         </div>
 
         <div className='flex flex-col p-5 gap-3'>
