@@ -11,7 +11,7 @@ const Home:React.FC = () => {
                     <span className='text-6xl font-semibold text-[#1C99EC]'>David Valenzuela</span>
                     <span className='text-2xl font-light text-slate-600 dark:text-slate-300'>Ing. en Sistemas Computacionales</span>
                 </div>
-                <a href="" className='w-fit h-fit px-16 py-3 rounded bg-[#1C99EC] text-white font-medium hover:brightness-95 hover:transition duration-300'>Ver CV</a>
+                <a href="https://drive.google.com/file/d/1DLXqgBfYsYIHuVxSn637PdtTKHWkh2IZ/view?usp=sharing" target='_blank' className='w-fit h-fit px-16 py-3 rounded bg-[#1C99EC] text-white font-medium hover:brightness-95 hover:transition duration-300'>Ver CV</a>
             </div>
 
             <div className='w-72 h-72 rounded-full relative border-4 border-blue-500 bg-[#7193BE]'>
