@@ -1,5 +1,6 @@
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
+import Projects from "./components/Projects"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <main className="bg-slate-50 w-[100vw] min-h-screen dark:bg-[#101827]">
       <NavBar/>
       <Home/>
+      <Projects/>
     </main>
   )
 }
