@@ -25,6 +25,30 @@ const Projects:React.FC = () => {
                         <BtnProject link='' icon={<Link className='w-5 h-5'/>} text='Ir al sitio web'/>
                     </>
                 }/>
+                <ProjectContainer children={
+                    <>
+                        <TechnologyUsed text='React'/>
+                        <TechnologyUsed text='Tailwind'/>
+                        <TechnologyUsed text='TypeScript'/>
+                    </>
+                } children2={
+                    <>
+                        <BtnProject link='' icon={<Github className='w-5 h-5'/>} text='Ir al repositorio'/>
+                        <BtnProject link='' icon={<Link className='w-5 h-5'/>} text='Ir al sitio web'/>
+                    </>
+                }/>
+                <ProjectContainer children={
+                    <>
+                        <TechnologyUsed text='React'/>
+                        <TechnologyUsed text='Tailwind'/>
+                        <TechnologyUsed text='TypeScript'/>
+                    </>
+                } children2={
+                    <>
+                        <BtnProject link='' icon={<Github className='w-5 h-5'/>} text='Ir al repositorio'/>
+                        <BtnProject link='' icon={<Link className='w-5 h-5'/>} text='Ir al sitio web'/>
+                    </>
+                }/>
             </div>
 
         </div>
