@@ -9,26 +9,26 @@ const Skills:React.FC = () => {
             <span className='text-3xl w-full text-center'>Habilidades</span>
 
             <div className='flex flex-wrap gap-10 justify-center'>
-                <SkillContainer icon={Icons.React}/>
-                <SkillContainer icon={Icons.Vue}/>
-                <SkillContainer icon={Icons.JS}/>
-                <SkillContainer icon={Icons.TypeScript}/>
-                <SkillContainer icon={Icons.HTML}/>
-                <SkillContainer icon={Icons.CSS}/>
-                <SkillContainer icon={Icons.Sass}/>
-                <SkillContainer icon={Icons.Tailwind}/>
-                <SkillContainer icon={Icons.Bootstrap}/>
-                <SkillContainer icon={Icons.Node}/>
-                <SkillContainer icon={Icons.Express}/>
-                <SkillContainer icon={Icons.MongoDB}/>
-                <SkillContainer icon={Icons.PostgreSQL}/>
-                <SkillContainer icon={Icons.SQL_Server}/>
-                <SkillContainer icon={Icons.MySQL}/>
-                <SkillContainer icon={Icons.Git}/>
-                <SkillContainer icon={Icons.GitHub}/>
-                <SkillContainer icon={Icons.SourceTree}/>
-                <SkillContainer icon={Icons.Python}/>
-                <SkillContainer icon={Icons.Postman}/>
+                <SkillContainer icon={Icons.React} name='React'/>
+                <SkillContainer icon={Icons.Vue} name='Vue.js'/>
+                <SkillContainer icon={Icons.JS} name='JavaScript'/>
+                <SkillContainer icon={Icons.TypeScript} name='TypeScript'/>
+                <SkillContainer icon={Icons.HTML} name='HTML'/>
+                <SkillContainer icon={Icons.CSS} name='CSS'/>
+                <SkillContainer icon={Icons.Sass} name='Sass'/>
+                <SkillContainer icon={Icons.Tailwind} name='Tailwind'/>
+                <SkillContainer icon={Icons.Bootstrap} name='Bootstrap'/>
+                <SkillContainer icon={Icons.Node} name='Node.js'/>
+                <SkillContainer icon={Icons.Express} name='Express.js'/>
+                <SkillContainer icon={Icons.MongoDB} name='MongoDB'/>
+                <SkillContainer icon={Icons.PostgreSQL} name='PostgreSQL'/>
+                <SkillContainer icon={Icons.SQL_Server} name='SQL Server' id='SQLServer'/>
+                <SkillContainer icon={Icons.MySQL} name='MySQL'/>
+                <SkillContainer icon={Icons.Git} name='Git'/>
+                <SkillContainer icon={Icons.GitHub} name='GitHub'/>
+                <SkillContainer icon={Icons.SourceTree} name='SourceTree'/>
+                <SkillContainer icon={Icons.Python} name='Python'/>
+                <SkillContainer icon={Icons.Postman} name='Postman'/>
             </div>
         
         </div>
