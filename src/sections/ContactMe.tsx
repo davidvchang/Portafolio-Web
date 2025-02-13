@@ -5,11 +5,11 @@ import ContactMeCard from '../components/ContactMeCard';
 const ContactMe:React.FC = () => {
   return (
     <section className='flex flex-col w-full h-full items-center justify-center bg-slate-50 py-14 dark:bg-[#101827]' id='contactme'>
-        <div className='flex flex-col gap-14 w-[80%] dark:text-white items-center'>
+        <div className='flex flex-col gap-14 w-full md:w-[80%] dark:text-white items-center px-5 md:px-0'>
             <span className='text-3xl w-full text-center'>Contactame</span>
 
             <div className='flex flex-col gap-10 items-center'>
-                <span className='text-[17px]'>Puedes contactarme a traves de los siguientes medios de comunicación.</span>
+                <span className='text-[17px] text-center md:text-start'>Puedes contactarme a traves de los siguientes medios de comunicación.</span>
 
                 <div className='flex flex-wrap w-full gap-3 justify-center'>
                     <ContactMeCard link='mailto:dvalenzuelachang@gmail.com' icon={<Mail className='w-[30px] h-[30px]' strokeWidth={1.5}/>} text='dvalenzuelachang@gmail.com'/>

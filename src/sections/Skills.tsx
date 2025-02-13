@@ -5,7 +5,7 @@ import Icons from '../assets/icon.tsx'
 const Skills:React.FC = () => {
   return (
     <section className='flex flex-col w-full h-full items-center justify-center py-14' id='skills'>
-        <div className='flex flex-col gap-14 w-[80%] dark:text-white'>
+        <div className='flex flex-col gap-14 w-full md:w-[80%] dark:text-white'>
             <span className='text-3xl w-full text-center'>Habilidades</span>
 
             <div className='flex flex-wrap gap-10 justify-center'>
