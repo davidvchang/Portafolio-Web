@@ -11,7 +11,7 @@ const ContactMe:React.FC = () => {
             <div className='flex flex-col gap-10 items-center'>
                 <span className='text-[17px]'>Puedes contactarme a traves de los siguientes medios de comunicación.</span>
 
-                <div className='flex w-full gap-3 justify-center'>
+                <div className='flex flex-wrap w-full gap-3 justify-center'>
                     <ContactMeCard link='mailto:dvalenzuelachang@gmail.com' icon={<Mail className='w-[30px] h-[30px]' strokeWidth={1.5}/>} text='dvalenzuelachang@gmail.com'/>
                     <ContactMeCard link='https://www.linkedin.com/in/davidvalenzuelac/' icon={<Linkedin className='w-[30px] h-[30px]' strokeWidth={1.5}/>} text='@davidvalenzuelac'/>
                     <ContactMeCard link='https://github.com/davidvchang' icon={<Github className='w-[30px] h-[30px]' strokeWidth={1.5}/>} text='@davidvchang'/>
