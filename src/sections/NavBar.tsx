@@ -10,6 +10,7 @@ const NavBar:React.FC = () => {
   const toggleMode = () => {
     document.documentElement.classList.toggle("dark");
     setIsDark(!isDark)
+    setIsOpenMenu(!isOpenMenu)
   }
 
   const toggleOpenMenu = () => {
