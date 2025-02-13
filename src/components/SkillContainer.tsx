@@ -16,7 +16,7 @@ const SkillContainer:React.FC<PropsSkill> = ({ icon, name, id }) => {
 
   return (
     <div className='flex flex-col relative items-center'>
-      <div className='flex w-20 h-20 justify-center items-center rounded-md border border-slate-300 bg-slate-200 dark:border-sky-900 dark:bg-[#1B2533]' onMouseEnter={toggleVisibility} onMouseLeave={toggleVisibility}>
+      <div className='flex w-[85px] h-[85px] justify-center items-center rounded-md border border-slate-300 bg-slate-200 dark:border-sky-900 dark:bg-[#1B2533]' onMouseEnter={toggleVisibility} onMouseLeave={toggleVisibility}>
           {icon}
       </div>
 
