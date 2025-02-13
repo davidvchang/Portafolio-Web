@@ -11,7 +11,7 @@ import { Github, Link } from 'lucide-react';
 
 const Projects:React.FC = () => {
   return (
-    <section className='flex flex-col w-full h-full items-center justify-center bg-white py-14 dark:bg-[#1B2533]' id='projects'>
+    <section className='flex flex-col w-full h-full items-center justify-center px-0 md:px-0 bg-white py-14 dark:bg-[#1B2533]' id='projects'>
 
         <div className='flex flex-col gap-14 w-[80%] dark:text-white'>
             <span className='text-3xl w-full text-center'>Proyectos</span>
