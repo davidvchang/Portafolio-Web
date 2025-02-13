@@ -1,14 +1,19 @@
 import React, { useState } from 'react'
 import Nav from '../components/Nav'
-import { Moon, Sun } from 'lucide-react';
+import { Moon, Sun, AlignJustify, X } from 'lucide-react';
 
 const NavBar:React.FC = () => {
 
   const [isDark, setIsDark] = useState<boolean>(false)
+  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
 
   const toggleMode = () => {
     document.documentElement.classList.toggle("dark");
     setIsDark(!isDark)
+  }
+
+  const toggleOpenMenu = () => {
+    setIsOpenMenu(!isOpenMenu)
   }
 
   const handleScroll = (id: string) => {
@@ -16,13 +21,45 @@ const NavBar:React.FC = () => {
     if(section) {
       section.scrollIntoView({behavior: "smooth"})
     }
+    setIsOpenMenu(!isOpenMenu)
   }
 
   return (
-    <div className='w-full h-16 bg-white opacity-90 flex items-center justify-between px-5 fixed z-99 shadow dark:bg-[#1B2533] dark:border-b dark:border-b-sky-950'>
+    <div className='w-full h-16 bg-white md:opacity-90 flex items-center justify-between px-5 fixed z-99 shadow dark:bg-[#1B2533] dark:border-b dark:border-b-sky-950'>
         <span className='text-[44px] font-semibold text-[#1C99EC]'>DV</span>
 
-        <div className='w-fit flex gap-10 items-center'>
+        {/*START MENU VERSION MOVIL */}
+        {isOpenMenu === true ? (
+          <button onClick={toggleOpenMenu}><X className='w-9 h-9 md:hidden dark:text-white'/></button>
+        ) : (
+            <button onClick={toggleOpenMenu}><AlignJustify className='w-9 h-9 md:hidden dark:text-white'/></button>
+        )}
+
+        {isOpenMenu === true && (
+          <div className='w-full flex flex-col absolute top-16 left-0 py-8 shadow bg-white dark:bg-[#1B2533] gap-10 items-center md:hidden'>
+              <Nav text='Inicio' onClick={() => handleScroll("home")}/>
+              <Nav text='Proyectos' onClick={() => handleScroll("projects")}/>
+              <Nav text='Habilidades' onClick={() => handleScroll("skills")}/>
+              <Nav text='Experiencia' onClick={() => handleScroll("experience")}/>
+              <Nav text='Contactame' onClick={() => handleScroll("contactme")}/>
+
+              <div className='w-full flex justify-end px-5'>
+                {isDark === true ? (
+                  <button className='p-3 bg-slate-700 border-slate-600 text-amber-300 rounded-full cursor-pointer border hover:bg-slate-600 hover:transition duration-300' onClick={toggleMode}><Sun className='w-6 h-6'/></button>
+                  
+                ): (
+                  <button className='p-3 bg-slate-100 rounded-full cursor-pointer border border-slate-200 hover:bg-slate-200 hover:transition duration-300' onClick={toggleMode}><Moon className='w-6 h-6'/></button>
+
+                )}
+
+              </div>
+
+          </div>
+
+        )}
+        {/*END MENU VERSION MOVIL */}
+
+        <div className='w-fit hidden gap-10 items-center md:flex'>
             <Nav text='Inicio' onClick={() => handleScroll("home")}/>
             <Nav text='Proyectos' onClick={() => handleScroll("projects")}/>
             <Nav text='Habilidades' onClick={() => handleScroll("skills")}/>
