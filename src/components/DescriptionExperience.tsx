@@ -8,7 +8,7 @@ interface PropsDescription {
 const DescriptionExperience:React.FC<PropsDescription> = ({description}) => {
   return (
     <div className='flex items-center gap-2'>
-      <ChevronRight className='w-7 h-7 text-sky-500'/>
+      <ChevronRight className='min-w-7 min-h-7 text-sky-500'/>
       <p className='text-[17px]'>{description}</p>
     </div>
   )

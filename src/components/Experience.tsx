@@ -19,7 +19,7 @@ const Experience:React.FC<PropsExperience> = ({position, company, time}) => {
 
   return (
     <div className='w-full h-full flex justify-center'>
-        <div className='flex flex-col p-8 w-[80%] bg-slate-100 border-slate-300 dark:bg-gray-700 rounded-lg border dark:border-slate-600'>
+        <div className='flex flex-col p-8 w-full md:w-[80%] bg-slate-100 border-slate-300 dark:bg-gray-700 rounded-lg border dark:border-slate-600'>
             <div className='flex justify-between'>
                 <span className='text-[28px] font-normal'>{position}</span>
 
