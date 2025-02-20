@@ -57,6 +57,20 @@ const Projects:React.FC = () => {
                         {/* <BtnProject link='' icon={<Link className='w-5 h-5'/>} text='Ir al sitio web'/> */}
                     </>
                 }/>
+                <ProjectContainer image={PelisDev} title='TechQuality Ecommerce' description='Ecommerce para una tienda ficticia de tecnologia. Permite registrarse, iniciar sesón, agregar productos al carrito y comprar por medio de mercadopago' children={
+                    <>
+                        <TechnologyUsed text='React' id='react'/>
+                        <TechnologyUsed text='Tailwind' id='tailwind'/>
+                        <TechnologyUsed text='TypeScript' id='typescript'/>
+                        <TechnologyUsed text='Express' id='express'/>
+                        <TechnologyUsed text='PostgreSQL' id='postgresql'/>
+                    </>
+                } children2={
+                    <>
+                        <BtnProject link='https://github.com/davidvchang/TechQuality---Ecommerce' icon={<Github className='w-5 h-5'/>} text='Ir al repositorio'/>
+                        {/* <BtnProject link='https://pelis-dev.netlify.app/' icon={<Link className='w-5 h-5'/>} text='Ir al sitio web'/> */}
+                    </>
+                }/>
             </div>
 
         </div>
