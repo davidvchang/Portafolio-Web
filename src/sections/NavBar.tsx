@@ -26,18 +26,18 @@ const NavBar:React.FC = () => {
   }
 
   return (
-    <div className='w-full h-16 bg-white md:opacity-90 flex items-center justify-between px-5 fixed z-99 shadow dark:bg-[#1B2533] dark:border-b dark:border-b-sky-950'>
+    <div className='w-full h-16 bg-white lg:opacity-90 flex items-center justify-between px-5 fixed z-99 shadow dark:bg-[#1B2533] dark:border-b dark:border-b-sky-950'>
         <span className='text-[44px] font-semibold text-[#1C99EC]'>DV</span>
 
         {/*START MENU VERSION MOVIL */}
         {isOpenMenu === true ? (
-          <button onClick={toggleOpenMenu}><X className='w-9 h-9 md:hidden dark:text-white'/></button>
+          <button onClick={toggleOpenMenu}><X className='w-9 h-9 lg:hidden dark:text-white'/></button>
         ) : (
-            <button onClick={toggleOpenMenu}><AlignJustify className='w-9 h-9 md:hidden dark:text-white'/></button>
+            <button onClick={toggleOpenMenu}><AlignJustify className='w-9 h-9 lg:hidden dark:text-white'/></button>
         )}
 
         {isOpenMenu === true && (
-          <div className='w-full flex flex-col absolute top-16 left-0 py-8 shadow bg-white dark:bg-[#1B2533] gap-10 items-center md:hidden'>
+          <div className='w-full flex flex-col absolute top-16 left-0 py-8 shadow bg-white dark:bg-[#1B2533] gap-10 items-center lg:hidden'>
               <Nav text='Inicio' onClick={() => handleScroll("home")}/>
               <Nav text='Proyectos' onClick={() => handleScroll("projects")}/>
               <Nav text='Habilidades' onClick={() => handleScroll("skills")}/>
@@ -60,7 +60,7 @@ const NavBar:React.FC = () => {
         )}
         {/*END MENU VERSION MOVIL */}
 
-        <div className='w-fit hidden gap-10 items-center md:flex'>
+        <div className='w-fit hidden gap-10 items-center lg:flex'>
             <Nav text='Inicio' onClick={() => handleScroll("home")}/>
             <Nav text='Proyectos' onClick={() => handleScroll("projects")}/>
             <Nav text='Habilidades' onClick={() => handleScroll("skills")}/>
