@@ -6,6 +6,7 @@ import BtnProject from '../components/BtnProject'
 import PelisDev from '../assets/img/Portadas/PelisDev.webp'
 import SistemaBiblioteca from '../assets/img/Portadas/Sistema-Para-biblioteca.webp'
 import Desarrollo from '../assets/img/Portadas/En-desarrollo-portada.webp'
+import Ecommerce from '../assets/img/Portadas/Ecommerce.webp'
 
 import { Github, Link } from 'lucide-react';
 
@@ -13,10 +14,10 @@ const Projects:React.FC = () => {
   return (
     <section className='flex flex-col w-full h-full items-center justify-center px-0 md:px-0 bg-white py-14 dark:bg-[#1B2533]' id='projects'>
 
-        <div className='flex flex-col gap-14 w-full px-5 md:px-0 md:w-[80%] dark:text-white'>
+        <div className='flex flex-col gap-14 w-full px-5 md:px-0 md:w-[80%] 2xl:w-[65%] 2xl:items-center dark:text-white'>
             <span className='text-3xl w-full text-center'>Proyectos</span>
 
-            <div className='flex flex-wrap gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:justify-center'>
                 <ProjectContainer image={PelisDev} title='PelisDev' description='Página web de pelicula inspirada en Cuevana, está hecha en React y estilada con Tailwind, se realizó solo la parte Front - End, se puede buscar peliculas por nombre o por categoría, así como cambiar de página.' children={
                     <>
                         <TechnologyUsed text='React' id='react'/>
@@ -57,7 +58,7 @@ const Projects:React.FC = () => {
                         {/* <BtnProject link='' icon={<Link className='w-5 h-5'/>} text='Ir al sitio web'/> */}
                     </>
                 }/>
-                <ProjectContainer image={PelisDev} title='TechQuality Ecommerce' description='Ecommerce para una tienda ficticia de tecnologia. Permite registrarse, iniciar sesón, agregar productos al carrito y comprar por medio de mercadopago' children={
+                <ProjectContainer image={Ecommerce} title='TechQuality Ecommerce' description='Ecommerce para una tienda ficticia de tecnologia. Permite registrarse, iniciar sesón, agregar productos al carrito y comprar por medio de mercadopago' children={
                     <>
                         <TechnologyUsed text='React' id='react'/>
                         <TechnologyUsed text='Tailwind' id='tailwind'/>

@@ -15,7 +15,7 @@ const ProjectContainer:React.FC<PropsProject> = ( {title, description, children,
             <img src={image} alt="" className='w-full h-full object-cover hover:scale-105 hover:transition duration-300'/>
         </div>
 
-        <div className='flex flex-col p-5 gap-3'>
+        <div className='flex flex-col flex-grow p-5 gap-3'>
             <span className='text-2xl font-medium text-center'>{title}</span>
             <p className='dark:text-slate-300 font-light text-ellipsis line-clamp-4'>{description}</p>
             
@@ -23,7 +23,7 @@ const ProjectContainer:React.FC<PropsProject> = ( {title, description, children,
                 {children}
             </div>
 
-            <div className='flex justify-center pt-3 gap-[18px]'>
+            <div className='flex justify-center pt-3 gap-[18px] mt-auto'>
                 {children2}
             </div>
         </div>

@@ -5,7 +5,7 @@ import ContactMeCard from '../components/ContactMeCard';
 const ContactMe:React.FC = () => {
   return (
     <section className='flex flex-col w-full h-full items-center justify-center bg-slate-50 py-14 dark:bg-[#101827]' id='contactme'>
-        <div className='flex flex-col gap-14 w-full md:w-[80%] dark:text-white items-center px-5 md:px-0'>
+        <div className='flex flex-col gap-14 w-full md:w-[80%] 2xl:w-[65%] dark:text-white items-center px-5 md:px-0'>
             <span className='text-3xl w-full text-center'>Contactame</span>
 
             <div className='flex flex-col gap-10 items-center'>
@@ -25,7 +25,7 @@ const ContactMe:React.FC = () => {
                 <span className='text-[17px]'>Otras redes sociales</span>
 
                 <div className='flex gap-5'>
-                    <a href="https://www.instagram.com/davidchang.dev/" target='_blank' className='hover:text-slate-500 dark:hover:brightness-80 hover:transition duration-300'>
+                    <a href="https://www.instagram.com/_davidvalenzuelac" target='_blank' className='hover:text-slate-500 dark:hover:brightness-80 hover:transition duration-300'>
                         <Instagram className='w-6 h-6'/>
                     </a>
 

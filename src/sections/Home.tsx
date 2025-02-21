@@ -4,7 +4,7 @@ import ProfilePhoto from '../assets/img/FotoPerfil.webp'
 const Home:React.FC = () => {
   return (
     <div className='flex w-full h-[100vh] items-center justify-center' id='home'>
-        <div className='flex w-full flex-col-reverse pt-16 lg:pt-0 gap-10 lg:gap-0 items-center justify-center  lg:w-[70%] h-[100vh] lg:flex-row lg:items-center lg:justify-between'>
+        <div className='flex w-full flex-col-reverse pt-16 lg:pt-0 gap-10 lg:gap-0 items-center justify-center  lg:w-[70%] 2xl:w-[65%] h-[100vh] lg:flex-row lg:items-center lg:justify-between'>
             <div className='flex flex-col gap-7'>
                 <div className='flex flex-col gap-3'>
                     <h1 className='text-3xl font-light dark:text-white text-center lg:text-start'>Hola, mi nombre es</h1>
@@ -17,7 +17,7 @@ const Home:React.FC = () => {
                 </div>
             </div>
 
-            <div className='w-72 h-72 rounded-full relative border-4 border-blue-500 bg-[#7193BE]'>
+            <div className='min-w-72 min-h-72 rounded-full relative border-4 border-blue-500 bg-[#7193BE]'>
                 <img src={ProfilePhoto} alt="FotoPerfil" className='w-full h-80 object-cover absolute rounded-full bottom-0'/>
             </div>
 
