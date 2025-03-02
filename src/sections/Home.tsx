@@ -12,7 +12,7 @@ const Home:React.FC = () => {
                     <span className='text-2xl font-light text-slate-600 dark:text-slate-300 text-center lg:text-start'>Ing. en Sistemas Computacionales</span>
                 </div>
                 <div className='flex justify-center lg:justify-start'>
-                    <a href="https://drive.google.com/file/d/1DLXqgBfYsYIHuVxSn637PdtTKHWkh2IZ/view?usp=sharing" target='_blank' className='w-fit h-fit px-16 py-3 rounded bg-[#1C99EC] text-white font-medium hover:brightness-95 hover:transition duration-300'>Ver CV</a>
+                    <a href="https://drive.google.com/file/d/1YAkwZtXxrJ_fO1OVyi9_shz-eEe8-XJK/view?usp=sharing" target='_blank' className='w-fit h-fit px-16 py-3 rounded bg-[#1C99EC] text-white font-medium hover:brightness-95 hover:transition duration-300'>Ver CV</a>
 
                 </div>
             </div>
